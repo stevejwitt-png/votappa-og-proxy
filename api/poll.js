@@ -3,7 +3,7 @@ export default async function handler(req, res) {
   const pollUrl = id ? `https://votappa.com/poll/${id}` : 'https://votappa.com';
   const title = id ? '🗳️ Vote on this poll — Votappa' : '🗳️ Votappa — Vote on what matters';
   const description = 'Vote anonymously — no sign up needed. See live results instantly!';
-  const image = 'https://media.base44.com/images/public/68f7dc21523785df0c10795b/votappa-og-default.png';
+  const image = 'https://media.base44.com/images/public/69d265d749cdbcd58fecdf4c/4d9886cc8_generated_image.png';
   res.setHeader('Content-Type', 'text/html');
   res.send(`<!DOCTYPE html><html><head>
 <meta property="og:type" content="website"/>
@@ -18,4 +18,3 @@ export default async function handler(req, res) {
 <meta http-equiv="refresh" content="0;url=${pollUrl}"/>
 </head><body>Redirecting...</body></html>`);
 }
-```
