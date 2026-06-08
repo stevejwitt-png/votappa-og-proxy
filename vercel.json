@@ -1,0 +1,19 @@
+{
+  "rewrites": [
+    {
+      "source": "/poll/:id",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": "(?i).*(facebookexternalhit|Twitterbot|LinkedInBot|TikTok|Slackbot|WhatsApp|Pinterest|Googlebot).*"
+        }
+      ],
+      "destination": "/api/poll?id=:id"
+    },
+    {
+      "source": "/poll/:id",
+      "destination": "/index.html"
+    }
+  ]
+}
