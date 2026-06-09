@@ -1,7 +1,7 @@
 export default async function handler(req, res) {
   const { id } = req.query;
   const pollUrl = id ? `https://votappa.com/poll/${id}`.trim() : 'https://votappa.com';
-  const fallbackImage = 'https://media.base44.com/images/public/69d265d749cdbcd58fecdf4c/4d9886cc8_generated_image.png';
+  const fallbackImage = 'https://media.base44.com/images/public/69d265d749cdbcd58fecdf4c/4e4ceb032_generated_image.png';
 
   let title = '🗳️ Votappa — Vote on what matters';
   let description = 'Vote and see live results instantly. Join the debate!';
