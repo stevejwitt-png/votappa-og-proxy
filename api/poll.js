@@ -42,6 +42,6 @@ export default async function handler(req, res) {
 <meta name="twitter:title" content="${title}"/>
 <meta name="twitter:description" content="${description}"/>
 <meta name="twitter:image" content="${image}"/>
-<meta http-equiv="refresh" content="0;url=${pollUrl}"/>
+<script>window.location.href="${pollUrl}"</script>
 </head><body>Redirecting...</body></html>`);
 }
