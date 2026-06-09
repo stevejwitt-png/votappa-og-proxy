@@ -31,7 +31,7 @@ export default async function handler(req, res) {
   }
 
   res.setHeader('Content-Type', 'text/html');
-  res.setHeader('Cache-Control', 's-maxage=60, stale-while-revalidate');
+  res.setHeader('Cache-Control', 'no-cache, no-store');
   res.send(`<!DOCTYPE html><html><head>
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="${title}"/>
